@@ -1,0 +1,174 @@
+/* styles/Slideshow.module.css */
+
+.slideShowWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .SlideShowIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;   
+    margin-top: 10px;
+    gap: 100px;
+    align-items: center;
+
+    
+  }
+
+.SlideShowIconItem {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #787878;
+    color: #787878;
+    font-weight: bold;
+    border-radius: 20px; /* Make buttons more rounded */
+    transition: transform 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transitions for specified properties */
+    animation-name: example;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    align-items: center;
+
+  }
+  
+  @keyframes example {
+    
+  0%   {border-color: #65c6ff;}
+  25% {border-color: #68a7ca;}
+  50%  {border-color: #8dbdd8;}
+  100%  {border-color: #b2d3e6;}
+    
+  0%   {color: #65c6ff;}
+  25% {color: #68a7ca;}
+  50%  {color: #8dbdd8;}
+  100%  {color: #b2d3e6;}
+    
+  }
+  
+  .SlideShowIconItem.active {
+    transform: scale(1.05); /* Slightly increase scale when active */
+    border-color: #023f5a !important; /* Ensure active border color is applied */
+    color: #023f5a !important; /* Ensure active color is applied */
+  }
+  
+  .slideShow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #787878;   
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    
+  }
+  
+
+/* styles/Slideshow.module.css */
+
+.slideShowlImg {
+    width: 100%; /* Adjust the width as needed */
+    height: 84vh;
+    cursor: pointer;
+    margin-left: 10px;
+
+    
+  }
+
+  .slideShowSquare{
+
+    padding: 40px 20px 0px 20px;
+    margin: 0;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Align the list items in the center */
+    background-color: #fff;
+    width: 100%;
+    border-radius: 20px;
+    
+  }
+
+  .slideShowSquare h4{
+    color:#787878;
+    padding:10px;
+    margin:20px 0px -2px 0px;
+    background-color:#fff;
+    text-align: left;
+  }
+  .slideShowSquareCurve{
+    /* padding-top: -10px; */
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    
+  }
+  @keyframes scaleAnimation {
+    0% {
+      /* transform: scale(1); */
+      border:1px solid #F0EFF6; /* Initial size (normal size) */
+    }
+    50% {
+      /* transform: scale(1); */
+      border:1px solid #9d9c9c; /* Scaled up to 1.5 times the original size */
+    }
+    100% {
+      /* transform: scale(1); */
+      border:1px solid #F0EFF6; /* Back to the normal size */
+    }
+  }
+  .slideShowSquareCurveBox{
+    display:flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 80px;
+    height: 50px;
+    background-color: #F0EFF6;
+    border-radius: 20%;
+    animation-name: scaleAnimation;
+     animation-duration: 2s; /*Duration of the animation in seconds */
+    animation-iteration-count: infinite; 
+  }
+
+  ul {
+    list-style: none;
+    margin: 10px 0px 10px 20px;
+    /* margin: 0; */
+    /* height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Align the list items in the center */
+    background-color: #fff;
+    cursor: pointer;
+    padding:7px 0px 7px 0px;
+    
+    /* width: 100%;
+    border-radius: 20px; */
+  }
+
+  ul li {
+    /* margin-bottom: 10px; */
+    padding:7px 55px 7px 0px;
+    margin-left: -40px;
+    background-color: #fff;
+    width: 100%; /* Set the width to match the image width */
+    text-align: left; 
+  }
+
+  ul li:hover{
+    
+    background-color: #c9c8ca;
+    border-right:5px solid #023f5a;
+    font-weight: bold;
+    color:#343435;
+  }
+  
+  
+  /* Add any other styles or animations as needed */
+  
