@@ -5,6 +5,15 @@ import styles from "../styles/Slideshow.module.css";
 const names = ["Teamwork", "Personal projects", "Everything in between"];
 const lists = ["💥  App launch", "🏡  Kitchen Reno", "🏃  Daily habits"];
 
+const sideImages = [
+  "https://res.cloudinary.com/superlist/image/upload/c_scale,q_66,w_603/v1702316385/website/cities/64ff85f7377dbac9ecd4349e_dream1-min_tqzwgm.jpg",
+  "https://res.cloudinary.com/superlist/image/upload/c_scale,q_66,w_603/v1702316385/website/cities/652417b121909f6dbadf87a5_CleanShot_2023-10-09_at_16.08.58_2x-min_tn93pt.png",
+  "https://res.cloudinary.com/superlist/image/upload/c_scale,q_66,w_603/v1702316384/website/cities/64ff85fb19e6b9cdb2331876_dream3-min_zhshux.jpg"
+]
+
+const dataAos = ["fade-right","fade-right","fade-right"];
+const dataAosLeft = ["fade-left","fade-left","fade-left"];
+
 export default function SlideShow({
   images,
   autoplay = true,
@@ -34,11 +43,6 @@ export default function SlideShow({
  
   }
   
-
-  function toggle() {
-    setIsPlay(!isPlay);
-  }
-
   return (
     <div className={styles.slideShowWrapper} data-aos="fade-up">
       <div className={styles.SlideShowIcon}>
@@ -68,7 +72,7 @@ export default function SlideShow({
                 <span className={styles.slideShowSquareCurveBox}></span>
             </div>
             <h4>Lists</h4>
-            <ul onClick={toggle}>
+            <ul>
                 {/* <li>List</li> */}
             {lists.map((list, index) => (
                 <li key={index} onClick={() => handleItemClick(index)}>
@@ -83,11 +87,16 @@ export default function SlideShow({
         
         <img
           className={styles.slideShowlImg}
-          onClick={toggle}
+          data-aos={dataAosLeft[currImageIndex]}
           src={images[currImageIndex]}
           alt={`Image ${currImageIndex + 1}`}
         />
         
+        <img 
+        className={styles.SlideShowSideImg}
+        data-aos={dataAos[currImageIndex]}
+        src={sideImages[currImageIndex]}
+        />
       </div>
     </div>
   );

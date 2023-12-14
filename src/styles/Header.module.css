@@ -1,20 +1,18 @@
-/* styles/Header.module.css */
-
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    
   }
   
   .topBorder {
     width: 100%;
     height: 14px;
     background-color: #ff5733;
-    margin-bottom: 1rem; /* Change the color as needed */
+    margin-bottom: 1rem;
   }
-  
-    
+     
   .signIn {
     align-self: flex-end;
     margin:30px 50px 0px 10px;
@@ -26,8 +24,7 @@
     border: 2px solid #787878;
     color: #08171f;
     font-weight: bold;
-    border-radius: 20px; /* Make buttons more rounded */
-    transition: transform 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transitions for specified properties */
+    border-radius: 20px; 
     animation-name: example;
     animation-duration:3s;
     animation-iteration-count: infinite;
@@ -40,7 +37,6 @@
     25% {border-color: #08171f;}
     50%  {border-color: #1a455e;}
     100%  {border-color: #387aa0;}
-
     
     0%   {color: #04121a;}
     25% {color: #08171f;}
@@ -100,11 +96,12 @@
     width: 70px; /* Adjust the width as needed */
     height: 70px; 
   }
-  .SubHomeHeadingImg:hover{
-    
+
+  .SubHomeHeadingImg:hover{   
     transition: transform 1s ease-in-out;
     transform: scale(1.5);
   }
+
   .SubHomeHeading span:nth-child(3){
     color:#ff5733;
   }

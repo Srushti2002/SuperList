@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from '../src/component/Header';
+import Canvas from '../src/component/Canvas';
 import Slideshow from '../src/component/SlideShow';
 import image1 from './images/image-1.png';
 import image2 from './images/image-2.png';
@@ -13,7 +14,7 @@ const images = [
   image1,
   image2,
   image3
-]
+];
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
     <div className="App">
       <Header />
       <Slideshow images={images} autoPlay = {true} autoplayInterval={3000} />
+      <Canvas />
     </div>
   );
 }

@@ -1,0 +1,72 @@
+.CanvasWrapper {
+  background-color: #F4F3FA;
+}
+
+.CanvasSection {
+  border: none;
+  border-radius: 10%;
+  margin: 2rem 0;
+  overflow:scroll;
+  position: sticky; /* Allow content to overflow for the stacking effect */
+}
+.CanvasItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 2rem 0rem 2rem 0rem;
+  height: 95vh;
+}
+
+.CanvasLeftSection {
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  padding: 0px 0px 0px 0px;
+  margin: 0;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 43%;
+}
+
+.CanvasMainTitle {
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  font-weight: 600;
+  font-size: 55px;
+  margin: 0vh 20vh 0vh 20vh;
+}
+
+.CanvasSubTitle {
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  font-weight: 600;
+  font-size: 55px;
+  color: #26253B;
+  margin: 0vh 20vh 0ch 20vh;
+}
+
+.CanvasRightSection {
+  padding: 2px;
+  margin: 0;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.CanvasRightSection iframe {
+  border: none;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  padding: 0;
+  margin: 0;
+}
+
+.CanvasItem.transitioned {
+  transform: translateY(0);
+}
