@@ -1,0 +1,128 @@
+.QualityWrapper {
+    background-color: #20202E;
+    padding: 10%;
+}
+
+.QualityHeading {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 2rem;
+}
+
+.QualityHeadingTop {
+    color: #DEDEEB;
+    background-color: #20202E;
+}
+
+.QualityHeadingBottom {
+    color: #F84F39;
+    background-color: #20202E;
+}
+.scrolled{
+    background-color:#20202E;
+    transition: background-color ease 0.3s;
+}
+.notScrolled{
+    background-color:#171723;
+}
+.QualityContent div {
+    display: flex;
+    flex-direction: row;
+    /* background-color: #20202E; */
+    padding-bottom: 1.5rem;
+    color: #DEDEEB;
+}
+
+.QualityContent div div {
+    font-size: 85px;
+    font-weight: 600;
+    line-height: 80px;
+    transition: color 0.3s ease;
+}
+
+.QualityContent div span {
+    display: none;
+}
+
+.QualityContent div:hover span {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    /* background-color: #20202E; */
+    color: #DEDEEB;
+    padding: 1.5rem 0rem 0rem 5rem;
+}
+
+.QualityBottom {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #dedeeb;
+}
+
+.QualityBeta {
+    margin-top: 10%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; 
+
+}
+.QualityBeta:Hover{
+    transform: scale(1.12);
+    /* margin:0; */
+}
+
+.QualityBetaSquare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34rem;
+    width: 100%; /* Use pixels instead of rems */
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 55px;
+    background-color: #F84F39;
+    animation-name: element;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    color:#F8F8F8;
+}
+.QualityBetaCircleOne,
+.QualityBetaCircleTwo {
+    width: 100%; /* Keep the width of the circles unchanged */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34rem;
+    animation-name: element;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+
+}
+
+@keyframes element{
+    
+    0%   {background-color: #F84F39;}
+    25% {background-color: #6B66DA;}
+    50%  {background-color: #2A966F;}
+    100%  {background-color: #2590F2;}
+
+}
+
+.QualityBetaCircleOne {
+    border-top-left-radius: 50%; 
+    border-bottom-left-radius: 50%;
+    transform: translate(5%, 0%);
+}
+
+.QualityBetaCircleTwo {
+    border-top-right-radius: 50%;  
+    border-bottom-right-radius: 50%;
+    transform: translate(-5%, 0%);
+}
+

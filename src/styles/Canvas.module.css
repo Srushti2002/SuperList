@@ -1,22 +1,60 @@
+/* Canvas.module.css */
+
 .CanvasWrapper {
   background-color: #F4F3FA;
+  overflow: hidden; /* Hide overflow to create the stacked effect */
 }
 
 .CanvasSection {
   border: none;
   border-radius: 10%;
-  margin: 2rem 0;
-  overflow:scroll;
-  position: sticky; /* Allow content to overflow for the stacking effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* Hide overflow to create the stacked effect */
 }
+
 .CanvasItem {
   display: flex;
   flex-direction: row;
   align-items: center;
   border-radius: 10px;
   justify-content: center;
-  margin: 2rem 0rem 2rem 0rem;
+  margin: 1rem 0rem 1rem 0rem;
   height: 95vh;
+  width: 100%;
+  transition: transform 0.3s ease; /* Add a transition for the stacking effect */
+}
+
+.CanvasEachCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Add the following styles for the stacking effect */
+.CanvasItem:nth-child(1) {
+  transform: translateY(0);
+}
+
+.CanvasItem:nth-child(2) {
+  transform: translateY(-20px);
+}
+
+.CanvasItem:nth-child(3) {
+  transform: translateY(-40px);
+}
+
+.CanvasItem:nth-child(4) {
+  transform: translateY(-60px);
+}
+
+.CanvasItem:nth-child(5) {
+  transform: translateY(-80px);
 }
 
 .CanvasLeftSection {
@@ -30,7 +68,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 43%;
+  width: 90vh;
 }
 
 .CanvasMainTitle {
@@ -55,6 +93,8 @@
 .CanvasRightSection {
   padding: 2px;
   margin: 0;
+  width: 90vh; 
+  height: 96vh;
   border-top-right-radius: 10%;
   border-bottom-right-radius: 10%;
 }
@@ -63,6 +103,8 @@
   border: none;
   border-top-right-radius: 10%;
   border-bottom-right-radius: 10%;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }

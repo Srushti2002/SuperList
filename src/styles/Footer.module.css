@@ -1,0 +1,136 @@
+.FooterWrapper{
+    background-color: #20202E;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items:center;
+    color:#DEDEEB ;
+}
+
+.FooterBlock{
+    background-color:#272737;
+    padding: 5rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 20rem; 
+    border-radius: 8%;
+}
+
+.FooterSuperlist{
+    display: flex;
+    flex-direction: column;
+    background-color:#272737;
+    align-items: left;
+    padding-left: 3rem;
+}
+.FooterSuperlist p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #f84f39;
+    padding-bottom: 0.5rem;
+}
+.FooterSuperlistItems{
+    display:flex;
+    flex-direction: row;
+}
+.FooterLinkList:first-child{
+    padding-right:7rem;
+}
+
+.FooterApp{
+    align-items:left;
+    background-color:#272737;
+    padding-left: 7rem;
+}
+.FooterApp p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #2590f2;
+    padding-bottom: 0.5rem;
+
+}
+
+.FooterSocial{
+    align-items:left;
+    background-color:#272737;
+    padding-left: 7rem;
+}
+
+.FooterSocial p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #2a966f;
+    padding-bottom: 0.5rem;
+
+}
+
+.FooterUpdates{
+    align-items:left;
+    background-color:#272737;
+    padding-left: 7rem;
+    
+}
+
+.FooterUpdates p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #8f89fa;
+    padding-bottom: 0.5rem;
+
+}
+.FooterUpdatesBox{
+    background-color: #303041;
+    padding: 1rem;
+    border-radius: 10%;
+    margin-top: 1rem;
+}
+.FooterUpdatesBox a{
+    display:flex;
+    flex-direction: column;
+    font-size: 30px;
+    line-height: 35px;
+    color: #f84f39;
+    Font-weight: 600;
+    white-space: wrap;
+}
+.FooterUpdatesBox a span{
+    background-color: #f84f39;
+    color:#fff;
+    font-size: 14px;
+    line-height: 20px;
+    Font-weight: 600;
+    margin:1rem 10rem 0rem 0rem;
+    padding: 0.3rem;
+    border-radius: 20%;
+}
+
+.FooterCopyRight{
+    margin: 5rem;   
+    color:#72718a;
+    font-weight:500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.FooterCopyRight:hover{
+    color:#fff;
+}
+a{   
+    text-decoration: none;
+    color: #DEDEEB;
+    text-decoration: none;
+    display:flex;
+    padding-top:1.5rem; 
+    white-space: nowrap;
+}
+a:hover{ 
+    color:#72718a;
+    background-color: transparent;
+   
+}
+

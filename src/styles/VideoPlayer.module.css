@@ -1,0 +1,77 @@
+.VideoPlayerWrapper {
+    background-color: #F4F3FA;
+  }
+  .atTop {
+    border-radius: 0;
+    margin: 0;
+  }
+  
+  .notAtTop {
+    border-radius: 10%; 
+    margin-right: 5%;
+    margin-left: 5%;
+  } 
+  
+  .VideoPlay {
+    
+    transition: border-radius 0.4s, margin 0.4s;
+    background-color: #171723;
+    padding: 1rem 0rem 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .VideoPlayerTitle {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 95px;
+    margin: 5rem 15rem 5rem 15rem;
+    text-align: center;
+    background-color: #171723;
+  }
+  
+  .VideoPlayerHead {
+    color: #dedeeb;
+    background-color: #171723;
+  }
+  
+  .VideoPlayerColoredHead {
+    color: #f84f39;
+    background-color: #171723;
+  }
+  
+  .VideoPlayerMain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+  }
+  
+  .VideoPlayerActualVideo {
+    height: 80%;
+    width: 80%;
+  }
+  
+  .VideoPlayerTimeline {
+    position: relative;
+    margin: 3rem 9rem;
+    width: 80%;
+    border-radius: 30%;
+    background-color: #dedeeb;
+    height: 5px;
+    display: flex;
+  }
+  
+  .VideoPlayerTimeline .VideoPlayerTimeLineGrowing {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: #f84f39;
+    transform-origin: left;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  
+  
